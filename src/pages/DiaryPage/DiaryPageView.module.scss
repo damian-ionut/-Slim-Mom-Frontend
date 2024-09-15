@@ -1,0 +1,30 @@
+.tableContainer {
+    margin-top: 50px; 
+    max-height: 300px; 
+    overflow-y: auto; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .productsTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .productsTable thead {
+    background-color: #f4f4f4;
+  }
+  
+  .productsTable th, .productsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .productsTable th {
+    position: sticky;
+    top: 0; 
+    z-index: 1;
+    background-color: #f4f4f4;
+  }
+  

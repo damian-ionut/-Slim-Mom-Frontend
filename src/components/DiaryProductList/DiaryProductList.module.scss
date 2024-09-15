@@ -1,0 +1,52 @@
+@use "../_styles/colors";
+@use "../_styles/mixins" as mixins;
+@use "../_styles/default";
+@use "../_styles/fonts";
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--accent-main);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 30px;
+  border: 1px solid var(--accent-main);
+  border-radius: 4px;
+  background: var(--accent-main);
+  box-shadow: 0px 2px 4px rgba(252, 132, 45, 0.5);
+  font-size: 14px;
+  color: var(--background);
+  cursor: pointer;
+  transition: all 250ms linear;
+  margin-left: 10px;
+
+  @include mixins.mediaquery("tablet", min) {
+    width: 100px;
+  }
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--background);
+  color: var(--accent-main);
+  border: 1px solid var(--accent-main);
+}
